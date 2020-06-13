@@ -4,24 +4,28 @@ body {
     padding: 0;
 }
 .div0 , .div4{
-    height: 200px;
-    width: 100%;
-    display: grid;
-    
+    width: 100%; 
+    overflow: hidden;
 }
 .div0{
-    display: flex;
     background-color: salmon;
-    padding: 0 10%;
+    padding: 15px 0;
 }
 .div4{
     background-color:orchid;
+    height: 150px;
 }
-.div0 div {
+.div0 .div00 {
+    background-color: gray;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+.div0 .div00 div {
     background-color: lightseagreen;
-    margin: 25px 5% 25px 5%;
-    width: 200px;
-    height:150px;
-    
-    
+    margin: 2px 0;
+    margin-left: 7.5%;
+    width: 150px;
+    height:120px;
+    float: left;  
 }
