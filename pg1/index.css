@@ -1,0 +1,27 @@
+body {
+    background-color: royalblue;
+    margin: 0;
+    padding: 0;
+}
+.div0 , .div4{
+    height: 200px;
+    width: 100%;
+    display: grid;
+    
+}
+.div0{
+    display: flex;
+    background-color: salmon;
+    padding: 0 10%;
+}
+.div4{
+    background-color:orchid;
+}
+.div0 div {
+    background-color: lightseagreen;
+    margin: 25px 5% 25px 5%;
+    width: 200px;
+    height:150px;
+    
+    
+}
