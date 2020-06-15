@@ -35,14 +35,52 @@ span{
     text-decoration: none;
     color: blanchedalmond;
     display: block;
-    padding: 10px;
+    padding: 15px 10px;
     font-weight: bold;
-    margin: 5px auto;
 }
 .navm ul li a:hover{
     background-color: blanchedalmond;
     color: black;
 }
+.about {
+    background-image: linear-gradient(to left top, #1f3022, #212f22, #222f23, #242e23, #252e24);
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.aboutme .cont{
+    background-color: rgb(29, 29, 29);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.me{
+    width: 20%; 
+    float: left;
+}
+.me img{
+    width: 100%;
+   }
+.words {
+    float: right;
+    color: snow;
+    font-size: 20px;
+    width: 80%;
+    padding: 40px;
+}
+
+@media (max-width:1100px){
+    .me{
+        width: 70%;
+        margin: 0 auto;
+        float: none;
+    }
+    .words { 
+        width: 80%;
+        margin: auto;
+        float: none;
+}
+}
+
 @media (max-width:750px){
     .cont {
         width: 85%;
@@ -52,7 +90,7 @@ span{
         margin-top: 5px;
     }
     .navm ul li a{
-        padding-right: 5px;
+        padding: 15px 5px;
     }
 }
 @media (max-width:600px){
@@ -64,13 +102,14 @@ span{
         margin-top: 5px;
     }
 }
-.about {
-    width: 100%;
-    background-color: rgb(44, 44, 44);
-    overflow: hidden;
+ th,td {
+    background-color: rgb(29, 29, 29);
+    color: snow;
 }
-.about .cont{
-    background-color: rgb(228, 228, 228);
-    min-height: 1000px;
-    margin: 40px auto;
+h1{
+    color: snow;
+    margin: 30px 0 7px;
+}
+.about>.cont{
+    margin-top: 30px;
 }
