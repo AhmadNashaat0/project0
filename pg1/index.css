@@ -6,7 +6,6 @@ body {
     width: 80%;
     margin: auto;
 }
-
 nav {
     background-color: rgb(22, 21, 22);
     width: 100%;
@@ -14,7 +13,6 @@ nav {
     position: sticky;
     top: 0;
 }
-
 .navl {
     font-size: 29px;
     color: blanchedalmond;
@@ -45,7 +43,6 @@ span{
     background-color: blanchedalmond;
     color: black;
 }
-
 @media (max-width:750px){
     .cont {
         width: 85%;
@@ -75,5 +72,5 @@ span{
 .about .cont{
     background-color: rgb(228, 228, 228);
     min-height: 1000px;
-    margin: 40px auto   ;
+    margin: 40px auto;
 }
