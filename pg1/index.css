@@ -1,26 +1,30 @@
 body {
-    background-color: royalblue;
     margin: 0;
     padding: 0;
 }
+.cont {
+    width: 80%;
+    margin: auto;
+}
 
 nav {
-    background-color: rgb(17, 7, 24);
+    background-color: rgb(22, 21, 22);
     width: 100%;
     overflow: hidden;
     position: sticky;
     top: 0;
 }
-nav .cont {
-    width: 80%;
-    margin: auto;
-}
+
 .navl {
     font-size: 29px;
     color: blanchedalmond;
     float: left;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+}
+span{
+    color: rgb(241, 205, 0);
 }
 .navm {
     float: right;
@@ -34,26 +38,28 @@ nav .cont {
     color: blanchedalmond;
     display: block;
     padding: 10px;
+    font-weight: bold;
+    margin: 5px auto;
 }
 .navm ul li a:hover{
     background-color: blanchedalmond;
     color: black;
 }
 
-span{
-    color: darkmagenta;
-}
 @media (max-width:750px){
-    nav .cont {
+    .cont {
         width: 85%;
     }
     .navl{
         font-size: 25px;
         margin-top: 5px;
     }
+    .navm ul li a{
+        padding-right: 5px;
+    }
 }
 @media (max-width:600px){
-    nav .cont {
+    .cont {
         width: 90%;
     }
     .navl{
@@ -62,7 +68,12 @@ span{
     }
 }
 .about {
-    height: 1500px;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: rgb(44, 44, 44);
+    overflow: hidden;
+}
+.about .cont{
+    background-color: rgb(228, 228, 228);
+    min-height: 1000px;
+    margin: 40px auto   ;
 }
