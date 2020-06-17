@@ -1,0 +1,106 @@
+$nav-color:rgb(22, 21, 22);
+$cont-width:80%;
+$md :750px;
+$sm :650px;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to left top, #1f3022, #212f22, #222f23, #242e23, #252e24);
+}
+.cont {
+    width: $cont-width;
+    margin: auto;
+}
+#about{
+    color:rgb(41, 75, 41);
+}
+nav {
+    background-color:$nav-color ;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .navl {
+        font-size: 29px;
+        color: blanchedalmond;
+        float: left;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 5px;
+    
+        span{
+            color: rgb(241, 205, 0);
+        }
+    }
+    .navm {
+        float: right;
+    
+        ul li{
+            list-style: none;
+            float: left;
+    
+            a{
+                text-decoration: none;
+                color: blanchedalmond;
+                display: block;
+                padding: 15px 5px;
+                font-weight: bold;
+            }
+            a:hover{
+                background-color: blanchedalmond;
+                color: black;
+            }
+    
+        }
+    
+    }
+}
+.bdy{
+    padding: 60px 0 ;
+
+    .row {
+        z-index: -1;
+        box-shadow: 6px 6px 20px black;
+        margin-bottom: 60px;
+        background-color: rgb(238, 230, 230);
+
+        img {
+            display: block;
+            z-index: 0;
+        }
+        >div {
+            color: black;
+            font-size: 18px;
+            padding: 40px 30px;
+            z-index: 0;
+             
+        }
+        
+    } 
+}
+@mixin respond-medium {
+    @media(max-width:$md){
+        .cont {
+            width: 85%;
+        }
+        .navl{
+            font-size: 21px;
+            margin-top: 5px;
+        }
+        .navm ul li a{
+            padding: 15px 5px;
+        }
+    }
+    @media(max-width:$sm){
+        .cont {
+            width: 90%;
+        }
+        .navl{
+            font-size: 21px;
+            margin-top: 10px;
+        }
+    }
+}
